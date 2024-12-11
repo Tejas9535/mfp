@@ -1,0 +1,17 @@
+{
+  "name": "root",
+  "private": true,
+  "scripts": {
+    "start": "lerna run start --parallel --stream",
+    "build": "lerna run build",
+    "postinstall": "pnpm run build",
+    "start:marketing": "lerna run start --scope @marketing --stream",
+    "start:auth": "lerna run start --scope @auth --stream",
+    "start:dashboard": "lerna run start --scope @dashboard --stream",
+    "start:container": "lerna run start --scope @container --stream "
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "lerna": "^8.1.9"
+  }
+}
